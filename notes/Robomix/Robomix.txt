@@ -1,0 +1,110 @@
+Para "RoboMix", a integração das mecânicas de plataforma, 
+quebra-cabeça e tiro em um jogo com tela estática pode ser 
+feita de forma a criar uma experiência rica e desafiadora. 
+Aqui está um detalhamento de como RoboMix pode se encaixar nesse formato:
+
+Mecânicas Integradas
+Plataforma (Platformer)
+
+Movimento Básico: RoboMix pode andar, pular e usar habilidades especiais como pulo duplo ou corrida.
+Obstáculos e Plataformas: Cada room terá plataformas estáticas e móveis, além de obstáculos como espinhos
+e buracos que RoboMix deve evitar.
+Quebra-Cabeça (Puzzle)
+
+Caixas e Interruptores: RoboMix pode empurrar ou carregar caixas para ativar interruptores que abrem portas 
+ou desativam armadilhas.
+Portas Trancadas: RoboMix encontra portas que só podem ser abertas resolvendo quebra-cabeças, como encontrar 
+chaves escondidas ou acertar uma sequência de interruptores.
+Padrões de Luz e Cor: RoboMix deve combinar padrões de luz ou cor em painéis para desbloquear novas áreas.
+Tiro (Shooter)
+
+Combate com Inimigos: RoboMix pode disparar projéteis para derrotar inimigos espalhados pela room. 
+Diferentes tipos de armas podem ser coletadas e usadas.
+Batalhas de Chefes: Em algumas rooms, RoboMix enfrentará chefes que exigem uma combinação de
+habilidades de plataforma, quebra-cabeça e tiro para serem derrotados.
+Estrutura da Room
+Cada room será projetada para ser uma tela estática onde RoboMix deve resolver todos os
+problemas presentes para abrir a porta e passar para a próxima room.
+
+Exemplo de Room
+Room 1: Introdução às Mecânicas
+
+Objetivo: Ensinar o jogador as mecânicas básicas de movimento, quebra-cabeças e combate.
+Elementos:
+Plataformas: Simples plataformas para RoboMix pular e se movimentar.
+Caixa e Interruptor: Uma caixa que precisa ser empurrada para um interruptor que abre a porta.
+Inimigos: Um inimigo básico que RoboMix deve derrotar usando seu disparo.
+Porta: Uma porta que se abre ao ativar o interruptor.
+Implementação no GameMaker Studio
+Sprites e Animações
+
+Crie sprites para RoboMix, inimigos, plataformas, caixas, interruptores e portas.
+Use o editor de sprites do GameMaker para animar as ações de RoboMix (andar, pular, atirar).
+Objetos e Eventos
+
+Crie objetos para RoboMix, inimigos, plataformas, caixas, interruptores e portas.
+Adicione eventos de colisão e interação entre RoboMix e os objetos.
+Programação das Mecânicas
+
+Movimento de RoboMix:
+gml
+Copiar código
+// No evento Create do objeto RoboMix
+speed = 4;
+jumpSpeed = 10;
+gravity = 0.5;
+vSpeed = 0;
+
+// No evento Step
+// Movimento horizontal
+if (keyboard_check(vk_right)) {
+    x += speed;
+} else if (keyboard_check(vk_left)) {
+    x -= speed;
+}
+
+// Pulo
+if (keyboard_check_pressed(vk_space) && place_meeting(x, y+1, obj_plataforma)) {
+    vSpeed = -jumpSpeed;
+}
+
+// Gravidade
+vSpeed += gravity;
+if (place_meeting(x, y+vSpeed, obj_plataforma)) {
+    while (!place_meeting(x, y+sign(vSpeed), obj_plataforma)) {
+        y += sign(vSpeed);
+    }
+    vSpeed = 0;
+} else {
+    y += vSpeed;
+}
+Disparo de RoboMix:
+gml
+Copiar código
+// No evento Step do objeto RoboMix
+if (keyboard_check_pressed(vk_control)) {
+    var proj = instance_create_layer(x, y, "Instances", obj_proj);
+    proj.direction = image_angle;
+    proj.speed = 10;
+}
+Interação com Caixas e Interruptores:
+gml
+Copiar código
+// No evento Step do objeto Caixa
+if (place_meeting(x + hspeed, y, obj_interruptor)) {
+    obj_interruptor.active = true;
+}
+
+// No evento Step do objeto Interruptor
+if (active) {
+    obj_porta.open = true;
+}
+Considerações Finais
+Progresso de Dificuldade: Cada room deve gradualmente introduzir novas mecânicas e aumentar a 
+dificuldade para manter o jogador desafiado e engajado.Feedback e Indicações Visuais: Forneça feedback 
+visual e auditivo claro quando o jogador resolver um quebra-cabeça ou derrotar um inimigo.
+Narrativa e Estética: Utilize elementos visuais e narrativos para criar um ambiente imersivo
+e coeso que complementa a jogabilidade.
+Com essas diretrizes, você pode integrar efetivamente as mecânicas de plataforma, 
+quebra-cabeça e tiro em "RoboMix", criando um jogo envolvente e divertido em uma série 
+de telas estáticas interconectadas.

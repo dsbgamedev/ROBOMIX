@@ -17,6 +17,15 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_plat","order":1,"path":"objects/obj_plat/obj_plat.yy",},
+    {"name":"spr_porta","order":4,"path":"sprites/spr_porta/spr_porta.yy",},
+    {"name":"Sprite4","order":3,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"obj_porta","order":4,"path":"objects/obj_porta/obj_porta.yy",},
+    {"name":"spr_caixa","order":2,"path":"sprites/spr_caixa/spr_caixa.yy",},
+    {"name":"obj_interruptor","order":3,"path":"objects/obj_interruptor/obj_interruptor.yy",},
+    {"name":"obj_caixa","order":2,"path":"objects/obj_caixa/obj_caixa.yy",},
+    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
+    {"name":"Camera","order":1,"path":"notes/Camera/Camera.yy",},
   ],
 }
