@@ -30,3 +30,5 @@ if (open && place_meeting(x, y, obj_roboMix)) {
 
 
 
+
+

@@ -9,9 +9,9 @@ if (place_meeting(x + hspeed, y, obj_interruptor)) {
 
 if (place_meeting(x + hspeed, y, obj_roboMix)) {
     if (keyboard_check(vk_right)) {
-        x += obj_roboMix.speed;
+        x += obj_roboMix.velocidade
     } else if (keyboard_check(vk_left)) {
-        x -= obj_roboMix.speed;
+        x -= obj_roboMix.velocidade;
     }
 }
 
