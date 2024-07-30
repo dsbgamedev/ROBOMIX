@@ -36,10 +36,11 @@
   "resources": [
     {"id":{"name":"obj_plat","path":"objects/obj_plat/obj_plat.yy",},},
     {"id":{"name":"spr_porta","path":"sprites/spr_porta/spr_porta.yy",},},
-    {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
+    {"id":{"name":"spr_interruptor_ativo","path":"sprites/spr_interruptor_ativo/spr_interruptor_ativo.yy",},},
     {"id":{"name":"obj_porta","path":"objects/obj_porta/obj_porta.yy",},},
     {"id":{"name":"spr_caixa","path":"sprites/spr_caixa/spr_caixa.yy",},},
     {"id":{"name":"obj_interruptor","path":"objects/obj_interruptor/obj_interruptor.yy",},},
+    {"id":{"name":"spr_interruptor_inativo","path":"sprites/spr_interruptor_inativo/spr_interruptor_inativo.yy",},},
     {"id":{"name":"obj_roboMix","path":"objects/obj_roboMix/obj_roboMix.yy",},},
     {"id":{"name":"obj_caixa","path":"objects/obj_caixa/obj_caixa.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},

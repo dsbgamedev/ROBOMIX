@@ -30,8 +30,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "Sprite4",
-    "path": "sprites/Sprite4/Sprite4.yy",
+    "name": "spr_interruptor_ativo",
+    "path": "sprites/spr_interruptor_ativo/spr_interruptor_ativo.yy",
   },
   "spriteMaskId": null,
   "visible": true,
