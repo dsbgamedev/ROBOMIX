@@ -2,9 +2,6 @@
 // You can write your code in this editor
 
 
-
-
-
 // Verifica se a caixa está em cima do interruptor
 if (place_meeting(x, y, obj_caixa)) {
     active = true; // Ativa o interruptor
