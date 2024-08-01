@@ -62,15 +62,23 @@ movimento_player = function ()
 	}	
 	y += velv; 
 	
-	//Aplicando o pulo
-	velv += grav;
-	
+	//Pulando
 	if(_chao)
 	{
 		if(_jump)
 		{
 			velv = - vel_jump;	
 		}
+		if(velh != 0)
+		{
+			image_xscale = sign(velh);	
+		}
+	}
+	else
+	{
+		//Aplicando o pulo
+		velv += grav;
+		
 	}
 }
 	
