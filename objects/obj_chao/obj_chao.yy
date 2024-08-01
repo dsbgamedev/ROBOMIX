@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_plat",
+  "name": "obj_chao",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

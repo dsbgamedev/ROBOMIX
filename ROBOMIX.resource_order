@@ -19,7 +19,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_porta_aberta","order":7,"path":"sprites/spr_porta_aberta/spr_porta_aberta.yy",},
-    {"name":"obj_plat","order":1,"path":"objects/obj_plat/obj_plat.yy",},
+    {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"spr_porta","order":4,"path":"sprites/spr_porta/spr_porta.yy",},
     {"name":"spr_interruptor_ativo","order":3,"path":"sprites/spr_interruptor_ativo/spr_interruptor_ativo.yy",},

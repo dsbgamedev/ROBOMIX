@@ -15,6 +15,7 @@ inputs = {
 
 movimento_player = function ()
 {
+	var _chao = place_meeting(x, y + 1, obj_chao) || place_meeting(x, y + 1, obj_caixa);
 	var _left, _rigth, _jump;
 	
 	_left  = keyboard_check(inputs.left);
@@ -28,7 +29,7 @@ movimento_player = function ()
 	
 	//Colisao com parede e chao
 	//Checando se estou colidindo com a parede 
-	var _col = instance_place(x + velh, y, obj_plat);
+	var _col = instance_place(x + velh, y, obj_chao);
 	if(_col)
 	{
 		if(velh > 0)
@@ -44,7 +45,7 @@ movimento_player = function ()
 	}	
 
 	x += velh;
-	var _col = instance_place(x , y + velv, obj_plat);
+	var _col = instance_place(x , y + velv, obj_chao);
 	if(_col)
 	{
 		if(velv > 0)
@@ -64,9 +65,12 @@ movimento_player = function ()
 	//Aplicando o pulo
 	velv += grav;
 	
-	if(_jump)
+	if(_chao)
 	{
-		velv = - vel_jump;	
+		if(_jump)
+		{
+			velv = - vel_jump;	
+		}
 	}
 }
 	

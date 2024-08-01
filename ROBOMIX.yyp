@@ -36,7 +36,7 @@
   },
   "resources": [
     {"id":{"name":"spr_porta_aberta","path":"sprites/spr_porta_aberta/spr_porta_aberta.yy",},},
-    {"id":{"name":"obj_plat","path":"objects/obj_plat/obj_plat.yy",},},
+    {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"spr_porta","path":"sprites/spr_porta/spr_porta.yy",},},
     {"id":{"name":"spr_interruptor_ativo","path":"sprites/spr_interruptor_ativo/spr_interruptor_ativo.yy",},},
