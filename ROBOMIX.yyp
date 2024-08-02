@@ -40,7 +40,7 @@
     {"id":{"name":"obj_entidade","path":"objects/obj_entidade/obj_entidade.yy",},},
     {"id":{"name":"spr_circulo","path":"sprites/spr_circulo/spr_circulo.yy",},},
     {"id":{"name":"sq_transicao_out","path":"sequences/sq_transicao_out/sq_transicao_out.yy",},},
-    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_porta","path":"sprites/spr_porta/spr_porta.yy",},},
     {"id":{"name":"spr_transicao","path":"sprites/spr_transicao/spr_transicao.yy",},},
     {"id":{"name":"spr_interruptor_ativo","path":"sprites/spr_interruptor_ativo/spr_interruptor_ativo.yy",},},
@@ -63,11 +63,11 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"spr_player_hit","path":"sprites/spr_player_hit/spr_player_hit.yy",},},
     {"id":{"name":"Camera","path":"notes/Camera/Camera.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room","path":"rooms/Room/Room.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"Room","path":"rooms/Room/Room.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

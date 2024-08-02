@@ -3,7 +3,7 @@
 
 
 //estado = "idle";
-
+ 
 open = false;
 
 

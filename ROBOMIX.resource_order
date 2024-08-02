@@ -22,7 +22,7 @@
     {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
     {"name":"obj_entidade","order":5,"path":"objects/obj_entidade/obj_entidade.yy",},
     {"name":"spr_circulo","order":13,"path":"sprites/spr_circulo/spr_circulo.yy",},
-    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"Room1","order":1,"path":"rooms/Room1/Room1.yy",},
     {"name":"spr_porta","order":4,"path":"sprites/spr_porta/spr_porta.yy",},
     {"name":"spr_transicao","order":12,"path":"sprites/spr_transicao/spr_transicao.yy",},
     {"name":"spr_interruptor_ativo","order":3,"path":"sprites/spr_interruptor_ativo/spr_interruptor_ativo.yy",},
