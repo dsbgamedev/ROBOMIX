@@ -7,14 +7,63 @@ var _chao = place_meeting(x, y + 1, obj_chao)
 
 if(_chao)
 {
+	//Diminuir tempo de andar
+	tempo_andar -= 1;
 	
-	velh = vel;
-
+	//Se o tempo acabou decidi se anda
+	if(tempo_andar <= 0)
+	{
+		andando = choose(true , false);
+		
+		//Mudando a direcao
+		if(andando)
+		{
+			velh = choose(vel, -vel);
+		}
+		else
+		{
+			velh = 0;
+		}
+	
+		//Resetando o tempo
+		tempo_andar = room_speed * 2;
+	}
+	
+	//Controlando animacao inimigo
+	if(velh != 0)
+	{
+		image_xscale = sin(velh);
+	}
+	
+	//Se bate na parede muda direcao
+	if(place_meeting(x + velh, y, obj_chao))
+	{
+		velh *=- 1;
+	}
+	
+	//Se eu nao posso cair, quando cair muda direcao
+	if(pode_cair == false)
+	{
+		if(place_meeting(x + (velh * 10), y + 1, obj_chao) == false)
+		{
+			//Se eu nao posso cair e nao estou tocando no chao
+			//Entao mudo a direcao
+			velh *=- 1;
+		}
+	
+	}
+	
 }
 else
 {
 	//Aplico a gravidade
 	velv += grav;
-	velh = 0;
+	//velh = 0;
+	
+	//Controlando animacao inimigo
+	if(velh != 0)
+	{
+		image_xscale = sin(velh);
+	}
 }
 
