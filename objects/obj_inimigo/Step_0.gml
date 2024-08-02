@@ -30,7 +30,7 @@ if(_chao)
 	}
 	
 	//Controlando animacao inimigo
-	if(velh != 0)
+	if(velh != 0 && dano == false)
 	{
 		image_xscale = sin(velh);
 	}
@@ -67,3 +67,10 @@ else
 	}
 }
 
+
+//Checando se eu estou tomando dano
+if(dano)
+{
+	sprite_index = spr_dano;
+	velh = 0;
+}
