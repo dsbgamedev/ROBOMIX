@@ -15,7 +15,7 @@ inputs = {
 
 movimento_player = function ()
 {
-	var _chao = place_meeting(x, y + 1, obj_chao) || place_meeting(x, y + 1, obj_caixa);
+	var _chao = place_meeting(x, y + 1, obj_chao);
 	var _left, _rigth, _jump;
 	
 	_left  = keyboard_check(inputs.left);
@@ -25,42 +25,39 @@ movimento_player = function ()
 	velh  = (_rigth - _left) * vel;
 	
 	
+	
+	
 	//Colisao Horizontal
+	//Checando se colidi com a caixa
+	//if(_caixa)
+	//{
+	//	if(velh > 0)
+	//	{
+	//		x = _caixa.bbox_left + (x - bbox_right);
+	//	}
+	//	if(velh < 0)
+	//	{
+	//		x = _caixa.bbox_right + (x - bbox_left);
+	//	}
+	//	velh = 0;		
+	//}
+	//if(_caixa)
+	//{
+	//	if(velv > 0)
+	//	{
+	//		y = _caixa.bbox_top + (y - bbox_bottom);
+	//	}
+	//	if(velv < 0)
+	//	{
+	//		y = _caixa.bbox_bottom + (y - bbox_top);
 	
-	//Colisao com parede e chao
-	//Checando se estou colidindo com a parede 
-	var _col = instance_place(x + velh, y, obj_chao);
-	if(_col)
-	{
-		if(velh > 0)
-		{
-			x = _col.bbox_left + (x - bbox_right);
-		}
-		if(velh < 0)
-		{
-			x = _col.bbox_right + (x - bbox_left);
+	//	}
+	//	//Uma vez que colidi eu paro
+	//	velv = 0;	
+	//}
 	
-		}
-		velh = 0;	
-	}	
-
-	x += velh;
-	var _col = instance_place(x , y + velv, obj_chao);
-	if(_col)
-	{
-		if(velv > 0)
-		{
-			y = _col.bbox_top + (y - bbox_bottom);
-		}
-		if(velv < 0)
-		{
-			y = _col.bbox_bottom + (y - bbox_top);
 	
-		}
-		//Uma vez que colidi eu paro
-		velv = 0;	
-	}	
-	y += velv; 
+	 
 	
 	//Pulando
 	if(_chao)
@@ -78,8 +75,13 @@ movimento_player = function ()
 	{
 		//Aplicando o pulo
 		velv += grav;
-		
+		if(velh != 0)
+		{
+			image_xscale  =sign(velh);
+		}
 	}
+	
+	
 }
 	
 
