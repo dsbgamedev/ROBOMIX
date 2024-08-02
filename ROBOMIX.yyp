@@ -62,12 +62,14 @@
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"spr_player_hit","path":"sprites/spr_player_hit/spr_player_hit.yy",},},
+    {"id":{"name":"Room13","path":"rooms/Room13/Room13.yy",},},
     {"id":{"name":"Camera","path":"notes/Camera/Camera.yy",},},
     {"id":{"name":"Room","path":"rooms/Room/Room.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room","path":"rooms/Room/Room.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room13","path":"rooms/Room13/Room13.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

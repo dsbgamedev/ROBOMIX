@@ -4,20 +4,20 @@
 if (open) {
     sprite_index = spr_porta_aberta; // Permite passagem ao destruir a porta
 
-    // Se a porta estiver aberta e RoboMix colidir com ela, muda para a próxima room
+    // Se a porta estiver aberta e RoboMix colidiu com ela, muda para a próxima room
     if (place_meeting(x, y, obj_roboMix)) {
-        show_debug_message("Mudando para a próxima room!");
+        show_debug_message("Iniciando transição para a próxima sala...");
 
-        // Inicia a transição
+        // Inicia a transição (se necessário)
         layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_in);
 
         // Define o alarme para o tempo de duração da sequência de transição
         global.transition_in_progress = true;
         global.current_room = room; // Salva a sala atual
         alarm[0] = 60; // Tempo da transição em steps
-		
-		// Marca a porta como "destruída" apenas para a atual sala
-        instance_deactivate_object(self);
+
+        // Marca a porta como "destruída" apenas para a sala atual
+        instance_deactivate_object(self); // Desativa a porta sem destruí-la permanentemente
     }
 }
 

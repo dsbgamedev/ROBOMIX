@@ -6,22 +6,17 @@
 
 
 function mudar_sala() {
-	show_debug_message("Mudando de sala...");
-	  if (room_next(global.current_room) == -1) {
+	show_debug_message("Mudando para a sala correta...");
+
+    var next_room = room_next(global.current_room);
+
+    if (next_room == -1) {
         // Se for a última sala, volte para a sala inicial
-        room_goto(Room);
+        room_goto(Room1);
     } else {
         // Caso contrário, vá para a próxima sala
-        room_goto(room_next(global.current_room));
+        room_goto(next_room);
     }
-	
-    //if (room_next(room) == -1) {
-    //    // Se for a última sala, volte para a sala inicial
-    //    room_goto(Room1);		
-    //} else {
-    //    // Caso contrário, vá para a próxima sala
-    //    room_goto_next();
-    //}
 }
 
 //randomize();
