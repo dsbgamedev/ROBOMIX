@@ -37,6 +37,7 @@ movimento_player = function ()
 		velh  = (_rigth - _left) * vel;
 	}
 	
+
 	//Pulando
 	if(_chao)
 	{
