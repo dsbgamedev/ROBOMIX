@@ -2,7 +2,7 @@
 // Você pode escrever seu código neste editor
 
 //Colisao com parede e chao
-	//Checando se estou colidindo com a parede 
+//Checando se estou colidindo com a parede 
 var _col  = instance_place(x + velh, y, obj_chao);
 if(_col )
 {
@@ -19,6 +19,7 @@ if(_col )
 }	
 
 x += velh;
+
 var _col = instance_place(x , y + velv, obj_chao);
 if(_col)
 {

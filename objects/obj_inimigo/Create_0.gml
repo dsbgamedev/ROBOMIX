@@ -4,17 +4,13 @@
 // Inherit the parent event
 event_inherited();
 
-
 //Personalizando as variaveis
 
 //Ele vai descidir para direita ou esquerda
 
 vel = choose(1, -1);
 
-
 andando     = choose(true, false);
-
-
 
 if(andando)
 {

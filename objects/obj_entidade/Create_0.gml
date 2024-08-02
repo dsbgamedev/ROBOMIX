@@ -3,5 +3,5 @@
 velh  =    0;
 velv  =    0;
 vel   =    3;
-grav  = .3;
-
+grav  =   .3;
+emp   =    4;

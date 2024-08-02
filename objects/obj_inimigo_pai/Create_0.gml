@@ -4,4 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-dano = false;
+dano  = false;
+morto = false;
