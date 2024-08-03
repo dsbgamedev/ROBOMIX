@@ -4,29 +4,20 @@
 
 //}
 
-
 function mudar_sala() {
-	show_debug_message("Mudando para a sala correta...");
+    show_debug_message("Executando função mudar_sala...");
 
-    var next_room = room_next(global.current_room);
-
-    if (next_room == -1) {
-        // Se for a última sala, volte para a sala inicial
-        room_goto(Room1);
+   //show_debug_message("Próxima sala calculada: " + string(next_room));
+	
+    if (room_next(room) != -1) {
+        //Verfica se tem uma proxima room		 
+        room_goto_next();
+		alarm[0] = layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
+		//sprite_index = spr_porta;
+       // show_debug_message("Última sala, voltando para Room1");
+        
     } else {
-        // Caso contrário, vá para a próxima sala
-        room_goto(next_room);
+		// Caso contrário, volto para o inicio
+        room_goto(rm_01);
     }
 }
-
-//randomize();
-
-//function mudando_sprite(_sprite)
-//{
-//	//Checar se eu estou com a sprite certa
-//	if(sprite_index != _sprite)
-//	{
-//		sprite_index = _sprite;
-//		image_index  = 0;	
-//	}	
-//}

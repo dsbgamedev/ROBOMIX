@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-//estado = "idle";
- 
+transicao_concluida = false;
+transicao = false;
 open = false;
+
+
+
 
 
 
