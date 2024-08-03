@@ -6,16 +6,14 @@
 
 function mudar_sala() {
     show_debug_message("Executando função mudar_sala...");
-
-   //show_debug_message("Próxima sala calculada: " + string(next_room));
 	
+		
     if (room_next(room) != -1) {
-        //Verfica se tem uma proxima room		 
+		
+		
+		//Verfica se tem uma proxima room		 
         room_goto_next();
-		alarm[0] = layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
-		//sprite_index = spr_porta;
-       // show_debug_message("Última sala, voltando para Room1");
-        
+		 layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
     } else {
 		// Caso contrário, volto para o inicio
         room_goto(rm_01);
