@@ -4,6 +4,18 @@
 
 //}
 
+
+function mudando_sprite(_sprite)
+{
+	//Checar se eu estou com a sprite certa
+	if(sprite_index != _sprite)
+	{
+		sprite_index = _sprite;
+		image_index  = 0;
+	}
+	
+}
+
 function mudar_sala() {
     show_debug_message("Executando função mudar_sala...");
 	

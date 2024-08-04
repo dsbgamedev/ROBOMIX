@@ -14,6 +14,7 @@ timer_dano  = tempo_dano;
 inv_tempo = room_speed * 2;
 inv_timer = 0;
 
+estado = "normal";
 
 inputs = {
 	left     : ord("A"),
@@ -22,7 +23,7 @@ inputs = {
 }
 
 
-movimento_player = function ()
+estado_normal = function ()
 {
 	var _chao = place_meeting(x, y + 1, obj_chao);
 	var _left, _rigth, _jump;
