@@ -4,7 +4,6 @@
 
 //}
 
-
 function mudando_sprite(_sprite)
 {
 	//Checar se eu estou com a sprite certa
@@ -24,12 +23,12 @@ function mudar_sala() {
 		
 		layer_set_target_room(room_next(room));
 		
-		 //layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
-		 layer_sequence_create("Transicao",0, 0, sq_transicao_out);
+		//layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
+		layer_sequence_create("Transicao",0, 0, sq_transicao_out);
     
 		//Reseta funcao da room
 		layer_reset_target_room();
-	
+		
 		//Verfica se tem uma proxima room		 
         room_goto_next();
 	

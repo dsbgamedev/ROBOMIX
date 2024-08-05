@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-res_width  = 1280;
-res_heigth = 640;
-res_scale  = 2;
+res_width  = 640;
+res_heigth = 480;
+res_scale  = 1;
 global.view_width = res_width / res_scale;
 global.view_heigth = res_heigth / res_scale;
 view_target = obj_roboMix;

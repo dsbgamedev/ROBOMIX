@@ -51,22 +51,22 @@
                                 {"resourceType":"GMAnimCurveChannel","resourceVersion":"1.0","name":"alpha","colour":4294967295,"points":[
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":255.0,},
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.51666665,"y":255.0,},
-                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":255.0,},
+                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":255.0,},
                                   ],"visible":true,},
                                 {"resourceType":"GMAnimCurveChannel","resourceVersion":"1.0","name":"red","colour":4278190335,"points":[
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":255.0,},
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.51666665,"y":255.0,},
-                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":255.0,},
+                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":255.0,},
                                   ],"visible":true,},
                                 {"resourceType":"GMAnimCurveChannel","resourceVersion":"1.0","name":"green","colour":4278255360,"points":[
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":255.0,},
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.51666665,"y":255.0,},
-                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":255.0,},
+                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":255.0,},
                                   ],"visible":true,},
                                 {"resourceType":"GMAnimCurveChannel","resourceVersion":"1.0","name":"blue","colour":4294901760,"points":[
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.0,"y":255.0,},
                                     {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.51666665,"y":255.0,},
-                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":255.0,},
+                                    {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":255.0,},
                                   ],"visible":true,},
                               ],"function":0,},},},"Disabled":false,"id":"57050278-c019-4442-b727-9be7659732ef","IsCreationKey":false,"Key":0.0,"Length":60.0,"Stretch":false,},
                     ],},"modifiers":[],"trackColour":4282970809,"tracks":[],"traits":0,},
