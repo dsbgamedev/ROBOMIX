@@ -22,11 +22,24 @@ function mudar_sala() {
 		
     if (room_next(room) != -1) {
 		
+		layer_set_target_room(room_next(room));
 		
+		 //layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
+		 layer_sequence_create("Transicao",0, 0, sq_transicao_out);
+    
+		//Reseta funcao da room
+		layer_reset_target_room();
+	
 		//Verfica se tem uma proxima room		 
         room_goto_next();
-		 layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
-    } else {
+	
+	} else {
+		layer_set_target_room(room_next(room));
+		
+		 layer_sequence_create("Transicao", 0, 0, sq_transicao_out);
+		
+		//Reseta funcao da room
+		layer_reset_target_room();
 		// Caso contrário, volto para o inicio
         room_goto(rm_01);
     }
