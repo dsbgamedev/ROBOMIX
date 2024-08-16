@@ -14,6 +14,8 @@ timer_dano  = tempo_dano;
 inv_tempo = room_speed * 2;
 inv_timer = 0;
 
+
+
 estado = "normal";
 
 inputs = {
@@ -25,7 +27,9 @@ inputs = {
 
 estado_normal = function ()
 {
-	var _chao = place_meeting(x, y + 1, obj_chao);
+	
+	
+	var _chao = place_meeting(x, y + 1, global.col);
 	var _left, _rigth, _jump;
 	
 	_left  = keyboard_check(inputs.left);

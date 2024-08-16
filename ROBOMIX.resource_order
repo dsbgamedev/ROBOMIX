@@ -38,6 +38,7 @@
     {"name":"sq_transicao_in","order":2,"path":"sequences/sq_transicao_in/sq_transicao_in.yy",},
     {"name":"Fundo","order":15,"path":"sprites/Fundo/Fundo.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
+    {"name":"tile_teste_Sheet","order":1,"path":"sprites/tile_teste_Sheet/tile_teste_Sheet.yy",},
     {"name":"obj_inimigo_pai","order":7,"path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},
     {"name":"spr_background","order":14,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_inimigo","order":8,"path":"sprites/spr_inimigo/spr_inimigo.yy",},

@@ -14,9 +14,8 @@ if (open && !transicao) {
 
 // Se a transição foi concluida mudo para proxima fase
 if (transicao && transicao_concluida) {
-     //alarm[0] = layer_sequence_create("Transicao", obj_roboMix.x, obj_roboMix.y, sq_transicao_out);
+    
 	 mudar_sala();
-	 
 }
 
 

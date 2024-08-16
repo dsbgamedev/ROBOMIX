@@ -3,7 +3,7 @@
 
 
 //Checando se esta no chao
-var _chao = place_meeting(x, y + 1, obj_chao)
+var _chao = place_meeting(x, y + 1, global.col);
 
 if(_chao)
 {
@@ -36,7 +36,7 @@ if(_chao)
 	}
 	
 	//Se bate na parede muda direcao
-	if(place_meeting(x + velh, y, obj_chao))
+	if(place_meeting(x + velh, y, _chao))
 	{
 		velh *=- 1;
 	}
@@ -44,7 +44,7 @@ if(_chao)
 	//Se eu nao posso cair, quando cair muda direcao
 	if(pode_cair == false)
 	{
-		if(place_meeting(x + (velh * 10), y + 1, obj_chao) == false)
+		if(place_meeting(x + (velh * 10), y + 1, _chao) == false)
 		{
 			//Se eu nao posso cair e nao estou tocando no chao
 			//Entao mudo a direcao
