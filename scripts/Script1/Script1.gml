@@ -4,8 +4,6 @@ function Script1(){
 
 }
 
-
-
 function mudando_sprite(_sprite)
 {
 	//Checar se eu estou com a sprite certa
