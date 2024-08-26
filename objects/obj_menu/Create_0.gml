@@ -2,11 +2,78 @@
 // You can write your code in this editor
 
 
-opcoes = ["Novo Jogo","Carregar Jogo","Opcões","Sair"];
+opcoes = ["Novo Jogo","Carregar Jogo","Opcões", "Créditos", "Sair"];
 op_max = array_length(opcoes);
 index  = 0;
 
-menu = function()
+
+controla_menu = function ()
+{
+
+	//Uma maneira de fazer setas para cima e para baixo no menu
+	if(keyboard_check_pressed(vk_down))
+	{
+		index += 1;
+	
+		//Tocando som
+		audio_play_sound(snd_menu,0,0);
+	}
+
+	if(keyboard_check_pressed(vk_up))
+	{
+		if(index > 0) index --;
+		//Tocando som
+		audio_play_sound(snd_menu,0,0);
+	}
+
+	//Limitando as setas passarem
+	index = clamp(index,0,op_max - 1); 
+	
+	
+	if(keyboard_check_pressed(vk_enter))
+	{
+		ativa_menu();
+	}
+
+}
+
+ativa_menu = function()
+{
+	switch(index)
+	{
+		//Jogar
+		case 0:
+		
+		break;
+		
+		//Carregar Jogo
+		case 1:
+		
+		break;
+		
+		//Opções
+		case 2:
+		
+		break;
+		
+		//Créditos
+		case 3:
+		
+		break;
+		
+		//Sair
+		case 4:
+			//Fechando o jogo
+			game_end();
+		break;
+		
+	}
+	
+
+}
+
+
+desenha_menu = function()
 {
 	
 draw_set_font(ft_menu);
@@ -18,8 +85,8 @@ draw_set_valign(fa_center);
 	for (var i= 0; i < op_max; i++)
 	{
 		
-		//var string_w = string_width(opcoes[i]);
-		//var string_h = string_height(opcoes[i]);
+		var string_w = string_width(opcoes[i]);
+		var string_h = string_height(opcoes[i]);
 		var	_dist  = 50;
 		var	_alt   = display_get_gui_width(); 
 		var	_larg  = display_get_gui_height(); 
@@ -45,6 +112,27 @@ draw_set_valign(fa_center);
 		draw_set_font(-1);	
 		draw_set_halign(0);
 		draw_set_valign(0);
+}
+/*
+credito = function()
+{
+	
+	var _creditos = "Magic Escape Room Kevin MacLeod (incompetech.com) Licenciado sob Creative Commons: Por Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/";
+	draw_set_font(ft_menu);
+	draw_set_color(c_white);
+	
+	draw_set_halign(fa_center); // alinha o texto no centro
+	draw_set_valign(fa_center);
+	
+	if(opcoes == "Créditos")
+	{
+			
+	}
+	
+	draw_set_font(-1);	
+	draw_set_halign(0);
+	draw_set_valign(0);
+	
 }
 
 //	if(point_in_rectangle(_mouse_x, _mouse_y, _x1 - string_w / 2, _y2 - string_h /2, _x1 + string_w / 2, _y2 + string_h / 2))
