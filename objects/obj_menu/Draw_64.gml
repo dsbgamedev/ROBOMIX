@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-desenha_menu();
-
+//Só me desenho se não esta tendo transição
+if(!global.transicao)
+{
+	desenha_menu();
+}
 
 
 

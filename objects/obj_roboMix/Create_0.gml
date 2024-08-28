@@ -126,6 +126,13 @@ var _inimigo = instance_place(x, y, obj_inimigo_pai);
 	}	
 }
 	
+//Criando a transição na posição do player
+layer_sequence_create("sq_transicao", x, y, sq_transicao2);
+
+//Avisando que o destino é a room menu
+global.destino = rm_000_menu;
+
+
 
 
 

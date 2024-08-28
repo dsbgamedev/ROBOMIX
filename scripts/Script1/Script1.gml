@@ -4,6 +4,24 @@ function Script1(){
 
 }
 
+
+//Decidindo o destino que minha transição vai levar
+global.destino = rm_000_menu;
+
+global.transicao = false;
+
+//Função para mudar de room
+function muda_room_transicao()
+{
+	room_goto(global.destino);	
+}
+
+function finaliza_transicao()
+{
+	global.transicao = false;	
+}
+
+/*
 function mudando_sprite(_sprite)
 {
 	//Checar se eu estou com a sprite certa

@@ -43,22 +43,45 @@ ativa_menu = function()
 	{
 		//Jogar
 		case 0:
+			//Chamando minha transição
+			layer_sequence_create("sq_transicao", 352 , 416, sq_transicao1);
+			
+			//O destino é a tela do jogo
+			global.destino = rm_01;
+			
+			//Esta tendo uma transição
+			global.transicao = true;
 		
 		break;
 		
 		//Carregar Jogo
 		case 1:
+			
 		
 		break;
 		
 		//Opções
 		case 2:
-		
+			//Chamando minha transição
+			layer_sequence_create("sq_transicao", 352 , 416, sq_transicao1);
+			
+			global.destino = rm_001_opcoes;
+			
+			//Esta tendo uma transição
+			global.transicao = true;
+			
 		break;
 		
 		//Créditos
 		case 3:
-		
+			//Chamando minha transição
+			layer_sequence_create("sq_transicao", 352 , 416, sq_transicao1);
+			
+			global.destino = rm_002_creditos;
+						
+			//Esta tendo uma transição
+			global.transicao = true;
+			
 		break;
 		
 		//Sair
