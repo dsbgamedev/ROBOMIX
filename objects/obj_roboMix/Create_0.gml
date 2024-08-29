@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
+//Eu vou parar de tocar todos os sons
+//Tocando a musica do jogo
+audio_stop_all();
+audio_play_sound(musica_fundo, 0, 1); //musica_fundo e uma variavel criado no objeto robomix
+
 velh  =    0;
 velv  =    0;
 vel   =    3;

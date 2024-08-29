@@ -5,6 +5,8 @@ switch(estado)
 {
 	case "normal":
 		estado_normal();
+		//fazendo teste para reinciar o jogo
+		if(keyboard_check_pressed(vk_backspace)) room_restart();
 	break;
 	
 	case "in":
