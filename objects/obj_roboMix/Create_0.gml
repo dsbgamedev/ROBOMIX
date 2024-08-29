@@ -53,9 +53,12 @@ estado_normal = function ()
 	//Pulando
 	if(_chao)
 	{
+		
 		if(_jump)
 		{
-			velv = - vel_jump;	
+			
+			velv = - vel_jump;
+			audio_play_sound(snd_jump, 0, 0);
 		}
 		if(velh != 0)
 		{
