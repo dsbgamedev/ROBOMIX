@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sem_T_tulo_1",
-  "bbox_bottom": 719,
+  "name": "spr_plan_azul_peque",
+  "bbox_bottom": 127,
   "bbox_left": 0,
-  "bbox_right": 1023,
+  "bbox_right": 154,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2b2d3daa-02aa-47e8-b701-30436bacb3f8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0a10836-5fc6-40f9-8984-c25edacbaae8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 720,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9f820914-67b8-481a-9fc6-608453402f97","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"616b1030-15af-41ab-9606-029ed0972265","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Background",
-    "path": "folders/Sprites/Background.yy",
+    "name": "spr_planetas",
+    "path": "folders/Sprites/spr_planetas.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sem_T_tulo_1",
+    "name": "spr_plan_azul_peque",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2b2d3daa-02aa-47e8-b701-30436bacb3f8","path":"sprites/Sem_T_tulo_1/Sem_T_tulo_1.yy",},},},"Disabled":false,"id":"88b1897b-66c4-42eb-b946-115dbd9524e1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a0a10836-5fc6-40f9-8984-c25edacbaae8","path":"sprites/spr_plan_azul_peque/spr_plan_azul_peque.yy",},},},"Disabled":false,"id":"9e82788d-25ec-44de-94dc-d5bc3eee8d8a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1024,
+  "width": 156,
 }
