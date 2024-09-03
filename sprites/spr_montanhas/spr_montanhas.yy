@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_estrelas",
-  "bbox_bottom": 476,
+  "name": "spr_montanhas",
+  "bbox_bottom": 479,
   "bbox_left": 0,
-  "bbox_right": 628,
-  "bbox_top": 0,
+  "bbox_right": 639,
+  "bbox_top": 172,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d891de94-ce52-48ea-851c-2b06730af218",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eab13695-2080-4da4-8fde-3763ff223413",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"590bf076-e483-4c00-86fb-2cdf09039dcf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f472fee6-1351-455c-bbee-ef523a6f9db4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_estrelas",
+    "name": "spr_montanhas",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d891de94-ce52-48ea-851c-2b06730af218","path":"sprites/spr_estrelas/spr_estrelas.yy",},},},"Disabled":false,"id":"00a3f365-92e6-4857-8e9d-aae45517ba24","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eab13695-2080-4da4-8fde-3763ff223413","path":"sprites/spr_montanhas/spr_montanhas.yy",},},},"Disabled":false,"id":"b6bd2776-1f71-45af-bd4d-84170e59c7ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
