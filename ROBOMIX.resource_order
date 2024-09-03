@@ -23,7 +23,6 @@
   "ResourceOrderSettings": [
     {"name":"spr_porta_aberta","order":7,"path":"sprites/spr_porta_aberta/spr_porta_aberta.yy",},
     {"name":"Magic_Escape_Room","order":2,"path":"sounds/Magic_Escape_Room/Magic_Escape_Room.yy",},
-    {"name":"spr_montanhas","order":6,"path":"sprites/spr_montanhas/spr_montanhas.yy",},
     {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
     {"name":"spr_frente","order":7,"path":"sprites/spr_frente/spr_frente.yy",},
     {"name":"obj_entidade","order":5,"path":"objects/obj_entidade/obj_entidade.yy",},
@@ -49,6 +48,7 @@
     {"name":"musica_menu","order":1,"path":"sounds/musica_menu/musica_menu.yy",},
     {"name":"spr_estrelas","order":9,"path":"sprites/spr_estrelas/spr_estrelas.yy",},
     {"name":"spr_back3","order":3,"path":"sprites/spr_back3/spr_back3.yy",},
+    {"name":"spr_montanhas","order":11,"path":"sprites/spr_montanhas/spr_montanhas.yy",},
     {"name":"obj_caixa","order":2,"path":"objects/obj_caixa/obj_caixa.yy",},
     {"name":"spr_planetas26","order":3,"path":"sprites/spr_planetas26/spr_planetas26.yy",},
     {"name":"sq_transicao_in","order":2,"path":"sequences/sq_transicao_in/sq_transicao_in.yy",},
