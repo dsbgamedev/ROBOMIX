@@ -3,7 +3,7 @@
 
 res_width  = 640;
 res_heigth = 480;
-res_scale  = 1;
+res_scale  = 1.5;
 global.view_width = res_width / res_scale;
 global.view_heigth = res_heigth / res_scale;
 view_target = obj_roboMix;
