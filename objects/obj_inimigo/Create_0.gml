@@ -4,13 +4,15 @@
 // Inherit the parent event
 event_inherited();
 
+
+if(!global.pause){
 //Personalizando as variaveis
 
 //Ele vai descidir para direita ou esquerda
 
-vel = choose(1, -1);
+vel     = choose(1, -1);
 
-andando     = choose(true, false);
+andando = choose(true, false);
 
 if(andando)
 {
@@ -24,5 +26,5 @@ if(andando)
 		velh = 0;
 	}
 }
-
+}
 tempo_andar = room_speed * 2;

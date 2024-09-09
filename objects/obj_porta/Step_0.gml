@@ -16,6 +16,7 @@ if (open && !transicao) {
 if (transicao && transicao_concluida) {
     
 	 mudar_sala();
+	 //muda_room_transicao();
 }
 
 

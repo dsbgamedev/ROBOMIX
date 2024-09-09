@@ -6,6 +6,8 @@ opcoes = ["Novo Jogo","Carregar Jogo","Opcões", "Créditos", "Sair"];
 op_max = array_length(opcoes);
 index  = 0;
 
+audio_stop_all();
+audio_play_sound(snd_menu_oficial,0,1);
 
 controla_menu = function ()
 {
