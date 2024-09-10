@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 192.96657,
+  "duration": 32.0,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "musica_menu.mp3",
+  "soundFile": "musica_menu.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.19,
 }

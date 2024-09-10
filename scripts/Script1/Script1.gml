@@ -5,11 +5,13 @@ function Script1(){
 }
 
 //Decidindo o destino que minha transição vai levar
-global.destino = rm_000_menu;
+global.destino   = rm_000_menu;
 
 global.transicao = false;
 
-global.pause =  false;
+global.pause     =  false;
+
+global.snd_lv1 = snd_meet_the_princess;
 
 //Função para mudar de room
 function muda_room_transicao()

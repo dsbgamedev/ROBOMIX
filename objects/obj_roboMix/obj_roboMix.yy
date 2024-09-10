@@ -33,7 +33,7 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"musica_fundo","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"snd_musica_principal","varType":5,},
+      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"snd_meet_the_princess","varType":5,},
   ],
   "solid": false,
   "spriteId": {

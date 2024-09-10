@@ -1,14 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 //Eu vou parar de tocar todos os sons
 //Tocando a musica do jogo
-
 if(!global.pause)
 {
 	audio_stop_all();
 	audio_play_sound(musica_fundo, 0, 1); //musica_fundo e uma variavel criado no objeto robomix
 }
+
+
+//audio_stop_all();
+
 
 velh  =    0;
 velv  =    0;
@@ -36,7 +40,6 @@ inputs = {
 
 estado_normal = function ()
 {
-		
 	
 	var _chao = place_meeting(x, y + 1, global.col);
 	var _left, _rigth, _jump;
