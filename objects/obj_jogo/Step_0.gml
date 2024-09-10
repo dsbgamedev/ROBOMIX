@@ -16,7 +16,7 @@ if(global.pause)
 				//velv		= 0;
 				//vel         = 0;
 				image_speed = 0;
-				audio_stop_sound(snd_musica_principal);
+				//audio_stop_sound(snd_musica_principal);
 				audio_stop_sound(snd_jump);
 			}
 		}	
