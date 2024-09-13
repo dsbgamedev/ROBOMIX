@@ -2,10 +2,12 @@
 // You can write your code in this editor
 
 //Desenha vida
-draw_text(10,30, string(global.vida_player));
+//draw_text(10,30, string(global.vida_player));
 
-desenha_vida(20,40);	
-
+if(!global.transicao)
+{
+	desenha_vida(20,40);	
+}
 
 
 
