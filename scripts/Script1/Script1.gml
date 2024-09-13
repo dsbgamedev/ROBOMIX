@@ -4,14 +4,32 @@ function Script1(){
 
 }
 
+#region Variaveis
 //Decidindo o destino que minha transição vai levar
-global.destino   = rm_000_menu;
+global.destino         = rm_000_menu;
+global.transicao       = false;
+global.max_vida_player = 6;
+global.vida_player     = global.max_vida_player;
 
-global.transicao = false;
+//Criando o objeto control
+instance_create_depth(0,0,0, obj_game_controle);
 
-global.pause     =  false;
+//global.pause           = false;
 
-global.snd_lv1 = snd_meet_the_princess;
+//Variaveis de vida do player
+
+
+#endregion
+
+
+function muda_sprite(_sprite)
+{
+	if(sprite_index != _sprite)//quando a sprite index for diferente da _sprite q estou enviando
+	{
+		sprite_index = _sprite;	
+		image_index  = 0; //garante iniciar animação no valor inicial
+	}
+}
 
 //Função para mudar de room
 function muda_room_transicao()

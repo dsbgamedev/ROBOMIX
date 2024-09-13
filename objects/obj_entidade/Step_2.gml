@@ -1,8 +1,8 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if(!global.pause)
-{
+//if(!global.pause)
+//{
 image_speed =    .50;	
 //Colisao com parede e chao
 //Checando se estou colidindo com a parede 
@@ -39,4 +39,4 @@ if(_col)
 	velv = 0;	
 }
 y += velv;
-}
+//}
