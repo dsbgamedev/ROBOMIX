@@ -48,6 +48,7 @@ ativa_menu = function()
 			//Chamando minha transição
 			layer_sequence_create("sq_transicao", 352 , 416, sq_transicao1);
 			
+			global.vida_player = global.max_vida_player;			
 			//O destino é a tela do jogo
 			global.destino = rm_01;
 			

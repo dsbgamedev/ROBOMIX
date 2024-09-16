@@ -41,7 +41,7 @@
 				if(timer_reinicia <= 0)
 				{
 					global.vida_player = global.max_vida_player;
-					room_restart();
+					room_restart();		
 				}
 				
 				if(image_alpha < 1)
