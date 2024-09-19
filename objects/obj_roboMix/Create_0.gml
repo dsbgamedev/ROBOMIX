@@ -18,15 +18,15 @@ audio_stop_all();
 audio_play_sound(musica_fundo, 0, 1); //musica_fundo e uma variavel criado no objeto robomix
 
 
-velh              = 0;
-velv              = 0;
-vel               = 3;
-grav              = .3;
+//velh              = 0;
+//velv              = 0;
+//vel               = 3;
+//grav              = .3;
 vel_jump          = 8;
-estado_txt        = "normal";
+//estado_txt        = "normal";
 
-posso_perder_vida = true;
-dano              = false;
+//posso_perder_vida = true;
+//dano              = false;
 tempo_dano        = room_speed * 0.5;
 timer_dano        = tempo_dano;
 
@@ -83,8 +83,10 @@ estado_normal = function ()
 		}
 		if(velh != 0)
 		{
+			
 			image_xscale = sign(velh);	
 		}
+		
 	}
 	else
 	{
@@ -94,22 +96,26 @@ estado_normal = function ()
 		//Se eu cair no inimigo
 		if(_inimigo)
 		{
-			dano = false;
-			
-			//Subo no ar novamente
-			velv = - vel_jump;
-			
-			//Avisando para o inimigo que eu acertei que ele tomou o dano!
-			_inimigo.dano = true;
-			
+			//dano = false;
+			//Se o inimigo não esta morto
+			if(_inimigo.morto == false)
+			{
+				//Subo no ar novamente
+				velv = - vel_jump;
+				//sprite_index = spr_player_golpe;
+				//Avisando para o inimigo que eu acertei que ele tomou o dano!
+				_inimigo.dano = true;	
+			}
 		}
 		
 		//Aplicando o pulo
 		velv += grav;
-		if(velh != 0)
+		if(velh != 0 && dano == false)
 		{
-			image_xscale  =sign(velh);
+			sprite_index  =  spr_player_idle;
+			image_xscale  = sign(velh);
 		}
+		
 	}
 	
 	
@@ -141,7 +147,7 @@ estado_normal = function ()
 	{
 		//Acabou meu timer do dano
 		dano = false;
-		sprite_index = spr_player;
+		sprite_index = spr_player_idle;
 		//Posso voltar a perder vida
 		posso_perder_vida = true;
 	}
@@ -163,11 +169,10 @@ var _inimigo = instance_place(x, y, obj_inimigo_pai);
 	
 		if(_inimigo && inv_timer <= 0)
 		{
-		
+
 			if(_inimigo.morto == false && _inimigo.dano == false)
 			{
 				dano = true;
-				//global.vida_player--;
 				//Dando o valor do timer dano
 				timer_dano = tempo_dano;
 				inv_timer  = inv_tempo;

@@ -4,12 +4,15 @@ function Script1(){
 
 }
 
+randomize();
+
 #region Variaveis
 //Decidindo o destino que minha transição vai levar
 global.destino         = rm_000_menu;
 global.transicao       = false;
 global.max_vida_player = 6;
 global.vida_player     = global.max_vida_player;
+//global.vida_inimigo    = 5;
 
 //Criando o objeto control
 instance_create_depth(0,0,0, obj_game_controle);
@@ -36,7 +39,6 @@ function muda_room_transicao()
 {
 	room_goto(global.destino);
 	
-	
 	//Garanto que nao tem som nenhum rodando
 	audio_stop_all();
 }
@@ -54,8 +56,7 @@ function efeito_som(_som = snd_jump, _variacao = .1)
 }
 
 function mudar_sala() {
-    show_debug_message("Executando função mudar_sala...");
-	
+    //show_debug_message("Executando função mudar_sala...");
 		
     if (room_next(room) != -1) {
 		

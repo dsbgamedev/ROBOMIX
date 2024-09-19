@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 
+//frendo_dano();
 
 colidindo_tile();
 
-sofrendo_dano();
 
 
 

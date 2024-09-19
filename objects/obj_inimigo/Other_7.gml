@@ -5,5 +5,12 @@
 
 if(sprite_index == spr_dano)
 {
-	instance_destroy();
+	morto = true;
+	//instance_destroy();
+}
+
+if(sprite_index == spr_inimigo_dead)
+{
+	image_speed = 0;
+	image_index = 6;
 }
