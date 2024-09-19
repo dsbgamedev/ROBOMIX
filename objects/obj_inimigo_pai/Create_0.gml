@@ -94,7 +94,7 @@ var _chao = place_meeting(x, y + 1, global.col);
 		//Se eu nao posso cair, quando cair muda direcao
 		if(pode_cair == false)
 		{
-			if(place_meeting(x + (velh * 10), y + 1, _chao) == false)
+			if(place_meeting(x + (velh * 20) , y + 1, global.col) == false)
 			{
 				//Se eu nao posso cair e nao estou tocando no chao
 				//Entao mudo a direcao
