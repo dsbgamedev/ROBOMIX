@@ -18,10 +18,10 @@ audio_stop_all();
 audio_play_sound(musica_fundo, 0, 1); //musica_fundo e uma variavel criado no objeto robomix
 
 
-//velh              = 0;
-//velv              = 0;
-//vel               = 3;
-//grav              = .3;
+velh              = 0;
+velv              = 0;
+vel               = 3;
+grav              = .3;
 vel_jump          = 8;
 //estado_txt        = "normal";
 

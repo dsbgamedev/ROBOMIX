@@ -39,11 +39,6 @@ if(morto)
 		image_alpha -= 0.01;	
 		instance_destroy();
 	}
-	////Se eu sumi totalmente eu me destruo
-	//if(image_alpha <= 0)
-	//{
-	//	instance_destroy();	
-	//}
 	
 	exit;
 }
