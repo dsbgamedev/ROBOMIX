@@ -3,6 +3,7 @@ quebra-cabeça e tiro em um jogo com tela estática pode ser
 feita de forma a criar uma experiência rica e desafiadora. 
 Aqui está um detalhamento de como RoboMix pode se encaixar nesse formato:
 
+
 Mecânicas Integradas
 Plataforma (Platformer)
 
