@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"in_the_wreckage",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":200.0104,
+  "name":"in_the_wreckage",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"in_the_wreckage.wav",
+  "type":0,
+  "volume":0.44,
+}

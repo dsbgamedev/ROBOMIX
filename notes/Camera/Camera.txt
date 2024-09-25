@@ -1,0 +1,71 @@
+Para um jogo com tela menor e estática, onde o jogador resolve problemas em uma única tela antes de passar para a próxima, o design pode ser mais focado e menos sobrecarregado. Aqui estão algumas diretrizes para configurar esse tipo de jogo:
+
+Tamanho da Room e Câmera
+Tamanho da Room: Como cada room é uma tela estática, o tamanho da room deve corresponder à resolução da tela. Um tamanho comum para esse tipo de jogo é 640x480 pixels, mas você pode ajustar conforme necessário.
+Tamanho da Câmera: A câmera deve cobrir toda a room, então a câmera terá o mesmo tamanho que a room, ou seja, 640x480 pixels.
+Estrutura do Jogo
+Cada room será um desafio autônomo. Quando o jogador resolve o quebra-cabeça ou derrota os inimigos da room, uma porta ou passagem se abre para a próxima room.
+
+Exemplo de Código para Configuração da Câmera e Transição de Rooms
+Configuração da Câmera
+gml
+Copiar código
+// No evento Create do objeto controlador da câmera
+camera_width = 640;
+camera_height = 480;
+
+camera = camera_create_view(0, 0, camera_width, camera_height, 0, obj_player, 0, 0, camera_width/2, camera_height/2);
+view_camera[0] = camera;
+view_visible[0] = true;
+Transição de Rooms
+gml
+Copiar código
+// No evento Step do objeto do personagem ou do controlador
+if (porta_ativada) {
+    room_goto_next();
+}
+Design das Rooms
+Cada room deve ser projetada para incluir:
+
+Elementos de Plataforma: Plataformas estáticas ou móveis, obstáculos e power-ups.
+Quebra-Cabeças: Chaves, interruptores, caixas para empurrar e padrões de luz ou cor para combinar.
+Inimigos e Combate: Inimigos que o jogador deve derrotar ou evitar. Armas e projéteis podem ser coletados e usados.
+Porta ou Passagem: Uma vez que o quebra-cabeça é resolvido ou todos os inimigos são derrotados, uma porta ou passagem se abre para a próxima room.
+Exemplo de Room
+Room 1: Tutorial Básico
+
+Objetivo: Ensinar o jogador as mecânicas básicas de movimento e interação.
+Elementos:
+Plataformas simples para pular.
+Uma caixa que precisa ser empurrada para um interruptor.
+Um inimigo básico que o jogador deve derrotar.
+Uma porta que se abre quando o interruptor é ativado.
+Exemplo de Room Configuração
+gml
+Copiar código
+// Room inicial (Tutorial)
+room1 = room_create();
+room_set_width(room1, 640);
+room_set_height(room1, 480);
+room_set_background(room1, background0);
+
+// Adicionando elementos
+instance_create_layer(100, 400, "Instances", obj_plataforma);
+instance_create_layer(300, 300, "Instances", obj_caixa);
+instance_create_layer(500, 400, "Instances", obj_inimigo);
+instance_create_layer(600, 400, "Instances", obj_porta);
+instance_create_layer(50, 400, "Instances", obj_player);
+
+// Configurando o comportamento da porta
+if (caixa_no_interruptor) {
+    obj_porta.active = true;
+}
+Considerações Finais
+Progressão de Dificuldade: Cada room deve introduzir novas mecânicas ou combinações de desafios para manter o jogo interessante e desafiador.
+Feedback do Jogador: Dê feedback visual e auditivo ao jogador quando ele resolver um quebra-cabeça ou derrotar um inimigo.
+Narrativa: Use diálogos ou elementos visuais para contar a história do jogo e manter o jogador envolvido.
+Com essas diretrizes, você pode criar uma série de rooms desafiadoras e envolventes para "RoboMix", proporcionando uma experiência de jogo divertida e dinâmica.
+
+como o robomix se encaixaria nesse jogo com as mecanicas que voce disse?
+ChatGPT
+Para "RoboMix", a integração das mecânicas de plataforma, quebra-cabeça e tiro em um jogo com tela estática pode ser feita de forma a criar uma experiência rica e desafiadora. Aqui está um detalhamento de como RoboMix pode se encaixar nesse formato:
