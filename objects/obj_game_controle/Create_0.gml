@@ -29,9 +29,11 @@ move_background = function()
 	var _arvore = layer_get_id("ass_arvore");
 	var _grama = layer_get_id("ass_grama");
 	
+	
 	layer_x(_grama, lerp(0, camera_get_view_x(view_camera[0]),0.2));
 	layer_x(_arvore, lerp(0, camera_get_view_x(view_camera[0]),0.3));
 	layer_x(_montanha, lerp(0, camera_get_view_x(view_camera[0]),0.5));
+
 	
 }
 
