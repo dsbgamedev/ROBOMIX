@@ -84,6 +84,7 @@
     {"name":"spr_back3","order":3,"path":"sprites/spr_back3/spr_back3.yy",},
     {"name":"spr_backg5","order":2,"path":"sprites/spr_backg5/spr_backg5.yy",},
     {"name":"spr_barra_vermelha","order":1,"path":"sprites/spr_barra_vermelha/spr_barra_vermelha.yy",},
+    {"name":"spr_bkg_lv4","order":13,"path":"sprites/spr_bkg_lv4/spr_bkg_lv4.yy",},
     {"name":"spr_caixa","order":2,"path":"sprites/spr_caixa/spr_caixa.yy",},
     {"name":"spr_camada_grama","order":10,"path":"sprites/spr_camada_grama/spr_camada_grama.yy",},
     {"name":"spr_circulo","order":12,"path":"sprites/spr_circulo/spr_circulo.yy",},

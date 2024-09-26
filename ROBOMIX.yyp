@@ -115,6 +115,7 @@
     {"id":{"name":"spr_barra_dialogo","path":"sprites/spr_barra_dialogo/spr_barra_dialogo.yy",},},
     {"id":{"name":"spr_barra_verde","path":"sprites/spr_barra_verde/spr_barra_verde.yy",},},
     {"id":{"name":"spr_barra_vermelha","path":"sprites/spr_barra_vermelha/spr_barra_vermelha.yy",},},
+    {"id":{"name":"spr_bkg_lv4","path":"sprites/spr_bkg_lv4/spr_bkg_lv4.yy",},},
     {"id":{"name":"spr_caixa","path":"sprites/spr_caixa/spr_caixa.yy",},},
     {"id":{"name":"spr_camada_grama","path":"sprites/spr_camada_grama/spr_camada_grama.yy",},},
     {"id":{"name":"spr_circulo","path":"sprites/spr_circulo/spr_circulo.yy",},},
