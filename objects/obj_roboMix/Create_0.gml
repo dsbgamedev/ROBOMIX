@@ -183,6 +183,9 @@ var _inimigo = instance_place(x, y, obj_inimigo_pai);
 }
 
 
+
+
+
 //estado_perde_vida = function()
 //{
 //	//Perdendo vida se ainda eu tenho vida

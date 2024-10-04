@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+//x = buraco.x + lengthdir_x(distance, direction);
+//x = buraco.y + lengthdir_y(distance, direction);
+//direction = (direction + 50/distance) mod 360;
+//distance  = max(distance - 0.5, 1);
 
 	switch(estado)
 	{
@@ -51,9 +55,6 @@
 			
 			
 		}
-
-
-
 
 
 

@@ -19,10 +19,16 @@ instance_create_depth(0,0,0, obj_game_controle);
 
 //global.pause           = false;
 
-//Variaveis de vida do player
-
 
 #endregion
+
+function morre_fora_room()
+{
+	if ((obj_roboMix.x < 0 || obj_roboMix.x > room_width) && (obj_roboMix.y < 0 || obj_roboMix.y > room_height)) 
+	{
+		game_restart();
+	}
+}
 
 
 function muda_sprite(_sprite)
